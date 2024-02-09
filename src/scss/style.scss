@@ -1,0 +1,381 @@
+// @use "sass:map"; // нужно для lite-custom-grid
+
+// Миксины Бутстрапа для _media.sass (порядок именно такой)
+@import "bootstrap-custom-grid";
+@import "../vendor/bootstrap-5.2.3/scss/functions";
+@import "../vendor/bootstrap-5.2.3/scss/variables";
+@import "../vendor/bootstrap-5.2.3/scss/mixins";
+@import "_mixins/emizer"; // Перевод px в em
+
+// Переменные
+@import "vars";
+
+/* ======= Шрифты START ======= */
+@import "fonts";
+/* ======= Шрифты END ======= */
+
+/* ======= Своя кастомная сетка START ======= */
+// @import "lite-custom-grid";
+/* ======= Своя кастомная сетка END ======= */
+
+/* ======= Сброс стилей START ======= */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  // font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+img,
+video,
+canvas {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+textarea {
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+
+/* ======= Сброс стилей END ======= */
+
+/* ======= Общий CSS START ======= */
+body {
+  // Центрирование для верстки компонентов
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // height: 100vh;
+
+  min-width: 390px;
+  font-family: $RobotoCondensed-400;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0;
+  color: var(--black);
+  background-color: var(--white);
+
+  a {
+    color: var(--black);
+  }
+}
+
+::placeholder {
+  color: var(--grey);
+}
+
+::selection {
+  color: var(--black);
+  background-color: var(--lightGrey);
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  &--width-100 {
+    width: 100%;
+  }
+}
+
+.is-hidden {
+  width: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
+.is-static {
+  overflow: hidden;
+  // height: 100%; // Возвращает наверх сайта после модалки
+  -webkit-overflow-scrolling: touch;
+}
+
+.has-hyphens {
+  hyphens: auto;
+}
+
+.button-default {
+  padding: 16px 24px;
+  color: var(--white);
+  font-family: $Montserrat-600;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  border-radius: 7px;
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.button-about {
+  padding: 16px 24px;
+  color: var(--lightBrown);
+  font-family: $Montserrat-600;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  border-radius: 7px;
+  border: 1px solid var(--lightBrown);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.link-underlined {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: $navButton;
+  }
+
+  &:hover:before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.input-default {
+  border-radius: 5px;
+  border: 1px solid var(--lightBrown);
+  background-color: var(--white);
+}
+
+/* ======= breadcrumbs START ======= */
+.breadcrumbs__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.breadcrumbs__list-item {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+
+  &:not(:last-child):after {
+    content: "-";
+    position: absolute;
+    top: 1px;
+    right: -8px;
+    width: auto;
+    height: auto;
+    color: var(--grey);
+  }
+}
+
+.breadcrumbs__list-item-link {
+  position: relative;
+  font-family: $RobotoCondensed-300;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--grey);
+
+  &--underline:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    pointer-events: none;
+  }
+}
+
+/* ======= breadcrumbs END ======= */
+
+// Для сброса размытия видеофона в режиме параллакса после открытия canvi nav
+.elem-transform-none {
+  transform: none !important;
+}
+
+// @include media-breakpoint-down(xxl) {
+//   .container {
+//     padding: 0;
+//   }
+// }
+
+@include media-breakpoint-down(sm) {
+  .container {
+    padding-right: calc(var(--bs-gutter-x) * 1);
+    padding-left: calc(var(--bs-gutter-x) * 1);
+    margin-top: var(--bs-gutter-y);
+  }
+}
+
+/* ======= Общий CSS END ======= */
+
+/* ======= Кастомный CSS START ======= */
+@import "_pages/_header";
+
+@import "_pages/_promo";
+@import "_pages/_love-in-fish";
+@import "_pages/_products";
+@import "_pages/_love-we-do";
+@import "_pages/_please";
+@import "_pages/_club";
+@import "_pages/_video";
+@import "_pages/_news";
+
+@import "_pages/_products-catalog";
+@import "_pages/_love-in-fish-about";
+
+@import "_pages/_couple";
+@import "_pages/_recipes";
+
+@import "_pages/_recipe";
+
+@import "_pages/_love-we-do-production";
+@import "_pages/_about";
+@import "_pages/_team";
+
+@import "_pages/_club-banner";
+@import "_pages/_club-recommendations";
+@import "_pages/_club-slider";
+@import "_pages/_club-links";
+
+@import "_pages/_stories-banner";
+@import "_pages/_stories-happiness";
+@import "_pages/_stories-form";
+
+@import "_pages/_article";
+
+@import "_pages/_footer";
+
+@import "_pages/_canvi-navbar";
+@import "_pages/_modals";
+// @import "_parts/_preloader";
+
+// Общие Media
+// @import "media"; // Всегда в конце
+/* ======= Кастомный CSS END ======= */

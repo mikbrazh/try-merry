@@ -1,0 +1,212 @@
+/* ======= promo START ======= */
+.promo {
+    background-color: var(--greyBg);
+}
+
+.promo__layout {
+    padding-top: 65px;
+    padding-bottom: 50px;
+}
+
+.promo__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.promo__products {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 505px;
+    width: 505px;
+    height: auto;
+}
+
+.promo__products-image {
+    width: 100%;
+    height: auto;
+}
+
+.promo__quote {
+    position: relative;
+}
+
+.promo__quote-text {
+    margin-bottom: 33px;
+    color: var(--brown);
+    font-family: $RobotoCondensed-300;
+    font-size: 29px;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.promo__quote-author {
+    padding-left: 235px;
+    // margin-right: 27px;
+    margin-right: 18px; // Для svg подписи с анимацией
+    display: inline-block;
+    color: var(--brown);
+    font-family: $RobotoCondensed-300;
+    font-size: 23px;
+    font-style: italic;
+    line-height: 1;
+}
+
+// Для шрифтовой подписи без анимации
+// .promo__quote-signature {
+//     display: inline-block;
+//     color: var(--brown);
+//     font-family: $SafiarSignature-400;
+//     font-size: 69px;
+//     line-height: 1;
+//     transform: rotate(-8deg) translateY(-10px);
+// }
+
+// Для svg подписи с анимацией
+.promo__quote-signature {
+    display: inline-block;
+    transform: translateY(25px);
+}
+
+/* ======= signature animation START ======= */
+#signature {
+    width: 160px;
+    height: auto;
+}
+
+#signature-path-1 {
+    fill: none;
+    stroke: #8B734B;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-dasharray: 235.55764770507812;
+    stroke-dashoffset: 235.55764770507812;
+    animation-name: sign-signature-path-1;
+    animation-delay: 0;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#signature-path-2 {
+    fill: none;
+    stroke: #8B734B;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-dasharray: 460.01641845703125;
+    stroke-dashoffset: 460.01641845703125;
+    animation-name: sign-signature-path-2;
+    animation-delay: 1.3s;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.promo__signature-path {
+    animation-play-state: paused;
+}
+
+.promo__signature-path--animation {
+    animation-play-state: running;
+}
+
+@keyframes sign-signature-path-1 {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes sign-signature-path-2 {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* ======= signature animation END ======= */
+
+/* ======= promo MEDIA START ======= */
+@include media-breakpoint-down(xxl) {
+    .promo__quote-author {
+        padding-left: 0;
+    }
+
+    .promo__products {
+        flex-basis: 520px;
+        width: 520px;
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .promo__products {
+        flex-basis: 430px;
+        width: 430px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .promo__layout {
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
+
+    .promo__wrapper {
+        flex-direction: column;
+    }
+
+    .promo__products {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .promo__quote-text {
+        margin-bottom: 22px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .promo__quote-author {
+        margin-bottom: 5px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    // Для шрифтовой подписи без анимации
+    // .promo__quote-signature {
+    //     transform: rotate(-8deg) translateY(0);
+    // }
+}
+
+@include media-breakpoint-down(sm) {
+    .promo__products {
+        position: relative;
+        margin-bottom: 55px;
+        width: auto;
+        height: 236px;
+    }
+
+    .promo__products-image {
+        position: absolute;
+        top: 0;
+        left: 52%;
+        transform: translateX(-50%);
+        width: 460px;
+        height: auto;
+    }
+
+    // Для svg подписи с анимацией
+    .promo__quote-author {
+        margin-bottom: 0;
+    }
+
+    .promo__quote-signature {
+        display: block;
+        transform: translateY(0);
+    }
+}
+
+/* ======= promo MEDIA END ======= */
+/* ======= promo END ======= */

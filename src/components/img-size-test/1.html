@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+		}
+
+		.viewport {
+			position: relative;
+			height: 450px;
+			border-radius: 20px;
+			overflow: hidden;
+/*			background-color: green;*/
+/*			background-image: url("Benefit-1@2x.jpg");*/
+/*			background-size: cover;*/
+/*			background-position: top left;*/
+/*			background-repeat: no-repeat;*/
+		}
+		.viewport img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: top left;
+			pointer-events: none;
+			z-index: -1;
+		}
+
+		.viewport--2 img {
+			object-position: top 0 left -25px;
+		}
+
+		.viewport--1 {
+			width: 312px;
+		}
+		.viewport--2 {
+			width: 272px;
+		}
+		.viewport--3 {
+			width: 458px;
+		}
+		.viewport--4 {
+			width: 312px;
+		}
+		.viewport--5 {
+			width: 460px;
+		}
+		.viewport--6 {
+			width: 340px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="viewport viewport--1">
+		<img src="Benefit-1@2x.jpg" alt="Картинка">
+	</div>
+	<div class="viewport viewport--2">
+		<img src="Benefit-1@2x.jpg" alt="Картинка">
+	</div>
+	<div class="viewport viewport--3">
+		<img src="Benefit-1@2x.jpg" alt="Картинка">
+	</div>
+	<div class="viewport viewport--4">
+		<img src="Benefit-1@2x.jpg" alt="Картинка">
+	</div>
+	<div class="viewport viewport--5">
+		<img src="Benefit-1@2x.jpg" alt="Картинка">
+	</div>
+	<div class="viewport viewport--6">
+		<img src="Benefit-1@2x.jpg" alt="Картинка">
+	</div>
+	
+</body>
+</html>

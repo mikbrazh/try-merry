@@ -1,0 +1,44 @@
+// Шрифт браузера по умолчанию (для emizer)
+$default-browser-font-size: 16px;
+
+// Цвета
+$temp: linear-gradient(rgba(0, 0, 0, 0.1));
+
+:root {
+    --black:                                 #212121;
+    --white:                                 #FFFFFF;
+    --blue:                                  #285484;
+    --darkBlue:                              #1E4570;
+    --yellow:                                #FFCB00;
+    --brown:                                 #8B734B;
+    --lightBrown:                            #A89A7F;
+    --grey:                                  #868686;
+    --lightGrey:                             #EAE3D9;
+    --greyBg:                                #f5f0ea;
+    --veryLightGrey:                         #f5f5f5;
+    --borderGrey:                            #D9D9D9;;
+    --footnoteGrey:                          #929292;
+    --recommendationsGrey:                   #565656;
+
+    --temp:                                  #C0C0C0; // Служебный фон
+}
+
+
+// Шрифты
+$Montserrat-500:                        "Montserrat-500", Arial, sans-serif;
+$Montserrat-600:                        "Montserrat-600", Arial, sans-serif;
+$Montserrat-700:                        "Montserrat-700", Arial, sans-serif;
+
+$RobotoCondensed-300:                   "RobotoCondensed-300", Arial, sans-serif;
+$RobotoCondensed-Italic-300:            "RobotoCondensed-Italic-300", Arial, sans-serif;
+$RobotoCondensed-400:                   "RobotoCondensed-400", Arial, sans-serif;
+$RobotoCondensed-500:                   "RobotoCondensed-500", Arial, sans-serif;
+$RobotoCondensed-Italic-500:            "RobotoCondensed-Italic-500", Arial, sans-serif;
+$RobotoCondensed-700:                   "RobotoCondensed-700", Arial, sans-serif;
+
+$SafiarSignature-400:                   "SafiarSignature-400", Arial, sans-serif;
+
+// Переходы анимации
+$button:                                0.1s ease;
+$navButton:                             0.2s ease;
+$subnav:                                0.3s ease;

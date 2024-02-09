@@ -1,0 +1,88 @@
+/* ======= love-in-fish-about START ======= */
+.love-in-fish-about {
+    position: relative;
+    height: 512px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(26, 80, 139, 0.2), rgba(26, 80, 139, 0.2));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+}
+
+.love-in-fish-about__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.love-in-fish-about__pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 240px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.love-in-fish-about__layout {
+    position: relative;
+    z-index: 1;
+}
+
+.love-in-fish-about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 512px;
+}
+
+.love-in-fish-about__slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    // visibility: hidden;
+    // opacity: 0;
+    // transition: opacity 1s ease-in;
+}
+
+/* ======= love-in-fish-about MEDIA START ======= */
+@include media-breakpoint-down(xxl) {
+    .love-in-fish-about__pattern {
+        width: 218px;
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .love-in-fish-about__pattern {
+        display: none;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .love-in-fish-about__text {
+        font-size: 45px;
+    }
+}
+
+/* ======= love-in-fish-about MEDIA END ======= */
+/* ======= love-in-fish-about END ======= */

@@ -1,0 +1,79 @@
+/* ======= about START ======= */
+.about {
+    background-color: var(--blue);
+}
+
+.about__layout {
+    padding: 100px 0 98px;
+}
+
+.about__content {
+    margin: 0 auto;
+    max-width: 1032px;
+}
+
+.about__title {
+    margin-bottom: 30px;
+    color: var(--white);
+    text-align: center;
+    font-family: $Montserrat-500;
+    font-size: 42px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.about__subtitle {
+    margin-bottom: 20px;
+    color: var(--white);
+    // text-align: center;
+    text-align: left;
+    font-family: $RobotoCondensed-500;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.68;
+}
+
+.about__circle-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.about__circle {
+    width: 10px;
+    height: 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.about__text {
+    color: var(--white);
+    // text-align: center;
+    text-align: left;
+    font-family: $RobotoCondensed-300;
+    font-size: 22px;
+    line-height: 1.68;
+}
+
+/* ======= about MEDIA START ======= */
+@include media-breakpoint-down(sm) {
+    .about__layout {
+        padding: 55px 0 32px;
+    }
+
+    .about__title {
+        font-size: 36px;
+    }
+
+    .about__subtitle {
+        margin-bottom: 33px;
+    }
+
+    .about__circle-block {
+        margin-bottom: 32px;
+    }
+}
+
+/* ======= about MEDIA END ======= */
+
+/* ======= about END ======= */

@@ -1,0 +1,149 @@
+/* ======= stories-form START ======= */
+.stories-form {
+    background-color: var(--white);
+}
+
+.stories-form__layout {
+    padding: 85px 0 54px;
+}
+
+.stories-form__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.stories-form__text-block {
+    flex: 0 1 681px;
+}
+
+.stories-form__form-block {
+    flex: 0 1 485px;
+}
+
+.stories-form__title {
+    margin-bottom: 34px;
+    color: var(--brown);
+    font-family: $Montserrat-500;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.stories-form__text {
+    margin-bottom: 55px;
+    color: var(--brown);
+    font-family: $RobotoCondensed-300;
+    font-size: 29px;
+    line-height: 1.8;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.stories-form__label {
+    margin-bottom: 12px;
+    display: block;
+    color: var(--brown);
+    font-family: $RobotoCondensed-400;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.stories-form__input {
+    padding: 10px 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 54px;
+    color: var(--brown);
+    font-family: $RobotoCondensed-400;
+    font-size: 18px;
+    line-height: 1.25;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+#stories-form__input-story {
+    margin-bottom: 12px;
+    min-height: 230px;
+    resize: vertical;
+}
+
+.stories-form__button {
+    display: block;
+}
+
+/* ======= stories-form MEDIA START ======= */
+
+@include media-breakpoint-down(xxl) {
+    .stories-form__content {
+        justify-content: space-between;
+    }
+
+    .stories-form__text-block {
+        flex: 0 1 615px;
+    }
+
+    .stories-form__form-block {
+        flex: 0 1 440px;
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .stories-form__text-block {
+        flex: 0 1 515px;
+    }
+
+    .stories-form__form-block {
+        flex: 0 1 360px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .stories-form__text-block {
+        flex: 0 1 100%;
+    }
+
+    .stories-form__form-block {
+        flex: 0 1 100%;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .stories-form__layout {
+        padding: 51px 0 48px;
+    }
+
+    .stories-form__title {
+        margin-bottom: 17px;
+        line-height: 1.2;
+    }
+
+    .stories-form__text {
+        margin-bottom: 48px;
+        line-height: 1.68;
+
+        &:last-child {
+            margin-bottom: 38px;
+        }
+    }
+
+    .stories-form__label {
+        margin-bottom: 9px;
+    }
+
+    .stories-form__input {
+        margin-bottom: 35px;
+    }
+
+    #stories-form__input-story {
+        min-height: 210px;
+    }
+}
+
+/* ======= stories-form MEDIA END ======= */
+/* ======= stories-form END ======= */

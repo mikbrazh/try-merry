@@ -1,0 +1,42 @@
+/* ======= couple START ======= */
+.couple {
+    position: relative;
+    min-height: 702px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(26, 80, 139, 0.2), rgba(26, 80, 139, 0.2));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+}
+
+.couple__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ======= couple MEDIA START ======= */
+@include media-breakpoint-down(sm) {
+    .couple {
+        min-height: 512px;
+    }
+}
+
+/* ======= couple MEDIA END ======= */
+
+/* ======= couple END ======= */

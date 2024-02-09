@@ -1,0 +1,91 @@
+/* ======= love-in-fish START ======= */
+.love-in-fish {
+    position: relative;
+    height: 512px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.love-in-fish__video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.love-in-fish__layout {
+    position: relative;
+}
+
+.love-in-fish__slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 512px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.love-in-fish__slogan--visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.love-in-fish__slogan-top {
+    width: auto;
+    height: 65px;
+}
+
+.love-in-fish__slogan-bottom {
+    width: auto;
+    height: 65px;
+}
+
+/* ======= love-in-fish MEDIA START ======= */
+@include media-breakpoint-down(md) {
+    .love-in-fish__slogan-top {
+        height: 55px;
+    }
+
+    .love-in-fish__slogan-bottom {
+        height: 55px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .love-in-fish {
+        height: 738px;
+    }
+
+    .love-in-fish__slogan {
+        height: 738px;
+    }
+
+    .love-in-fish__slogan-top {
+        height: 37px;
+    }
+
+    .love-in-fish__slogan-bottom {
+        height: 37px;
+    }
+}
+
+/* ======= love-in-fish MEDIA END ======= */
+
+/* ======= love-in-fish END ======= */

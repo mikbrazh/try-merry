@@ -1,0 +1,52 @@
+/* ======= stories-happiness START ======= */
+.stories-happiness {
+    background-color: var(--blue);
+}
+
+.stories-happiness__layout {
+    padding: 104px 0 68px;
+}
+
+.stories-happiness__content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.stories-happiness__title {
+    margin-bottom: 32px;
+    color: var(--white);
+    text-align: center;
+    font-family: $Montserrat-500;
+    font-size: 42px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.stories-happiness__text {
+    color: var(--white);
+    text-align: center;
+    // text-align: left;
+    font-family: $RobotoCondensed-300;
+    font-size: 22px;
+    line-height: 1.75;
+}
+
+/* ======= stories-happiness MEDIA START ======= */
+@include media-breakpoint-down(sm) {
+    .stories-happiness__layout {
+        padding: 52px 0 62px;
+    }
+
+    .stories-happiness__title {
+        margin-bottom: 28px;
+        line-height: 1.15;
+    }
+
+    .stories-happiness__text {
+        padding: 0 6px;
+        line-height: 1.7;
+    }
+}
+
+/* ======= stories-happiness MEDIA END ======= */
+/* ======= stories-happiness END ======= */

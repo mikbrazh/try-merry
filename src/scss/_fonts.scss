@@ -1,0 +1,25 @@
+@import "_mixins/font-face"; // !!! Проверить подключение всех форматов в _mixins/font-face.sass
+
+@include font-face("Montserrat-500", "../fonts/Montserrat/static/Montserrat-Medium", 500);
+@include font-face("Montserrat-600", "../fonts/Montserrat/static/Montserrat-SemiBold", 600);
+@include font-face("Montserrat-700", "../fonts/Montserrat/static/Montserrat-Bold", 700);
+
+@include font-face("RobotoCondensed-300", "../fonts/Roboto_Condensed/static/RobotoCondensed-Light", 300);
+@include font-face("RobotoCondensed-Italic-300", "../fonts/Roboto_Condensed/static/RobotoCondensed-LightItalic", 300);
+@include font-face("RobotoCondensed-400", "../fonts/Roboto_Condensed/static/RobotoCondensed-Regular", 400);
+@include font-face("RobotoCondensed-500", "../fonts/Roboto_Condensed/static/RobotoCondensed-Medium", 500);
+@include font-face("RobotoCondensed-Italic-500", "../fonts/Roboto_Condensed/static/RobotoCondensed-MediumItalic", 500);
+@include font-face("RobotoCondensed-700", "../fonts/Roboto_Condensed/static/RobotoCondensed-Bold", 700);
+
+@include font-face("SafiarSignature-400", "../fonts/Safiar_Signature/SafiarSignature", 400);
+
+// Подсказка:
+// 100 Тонкий (Волосяной) Thin (Hairline)
+// 200 Дополнительный светлый (Сверхсветлый) Extra Light (Ultra Light)
+// 300 Светлый Light
+// 400 Нормальный Normal (Regular)
+// 500 Средний Medium
+// 600 Полужирный Semi Bold (Demi Bold)
+// 700 Жирный Bold
+// 800 Дополнительный жирный (Сверхжирный) Extra Bold (Ultra Bold)
+// 900 Чёрный (Густой) Black (Heavy)

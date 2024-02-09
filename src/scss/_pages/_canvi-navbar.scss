@@ -1,0 +1,69 @@
+/* ======= canvi-navbar START ======= */
+.canvi-navbar {
+    background-color: var(--blue);
+}
+
+.canvi-navbar__layout {
+    position: relative;
+    padding: 13px 0 50px 30px;
+}
+
+.canvi-navbar__logo {
+    display: block;
+    margin-bottom: 30px;
+    width: 140px;
+    height: 55px;
+}
+
+.canvi-navbar__logo-image {
+    width: 100%;
+    height: auto;
+}
+
+.canvi-navbar__list-item {
+    margin-bottom: 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.canvi-navbar__list-link {
+    color: var(--white);
+    font-family: $RobotoCondensed-300;
+    font-size: 17px;
+    line-height: 1;
+}
+
+.canvi-navbar__list-link--title {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--white);
+    font-family: $RobotoCondensed-700;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.canvi-navbar__sublist-item {
+    margin-bottom: 5px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.canvi-navbar__close-button {
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    width: 13px;
+    height: 13px;
+}
+
+.canvi-navbar__close-button-icon {
+    width: 100%;
+    height: auto;
+}
+
+/* ======= canvi-navbar END ======= */

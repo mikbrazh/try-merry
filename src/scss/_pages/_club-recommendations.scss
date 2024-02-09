@@ -1,0 +1,51 @@
+/* ======= club-recommendations START ======= */
+.club-recommendations {
+    background-color: var(--blue);
+}
+
+.club-recommendations__layout {
+    padding: 92px 0 84px;
+}
+
+.club-recommendations__content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.club-recommendations__title {
+    margin-bottom: 29px;
+    color: var(--white);
+    text-align: center;
+    font-family: $Montserrat-500;
+    font-size: 42px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.club-recommendations__text {
+    color: var(--white);
+    text-align: center;
+    // text-align: left;
+    font-family: $RobotoCondensed-300;
+    font-size: 22px;
+    line-height: 1.68;
+}
+
+/* ======= club-recommendations MEDIA START ======= */
+@include media-breakpoint-down(sm) {
+    .club-recommendations__layout {
+        padding: 48px 0 64px;
+    }
+
+    .club-recommendations__title {
+        line-height: 1.15;
+    }
+
+    .club-recommendations__text {
+        padding: 0 4px;
+        line-height: 1.65;
+    }
+}
+
+/* ======= club-recommendations MEDIA END ======= */
+/* ======= club-recommendations END ======= */

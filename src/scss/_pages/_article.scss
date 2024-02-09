@@ -1,0 +1,108 @@
+/* ======= article START ======= */
+.article__breadcrumbs-layout {
+    padding: 46px 0 32px;
+}
+
+.article__banner {
+    position: relative;
+    min-height: 423px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(26, 80, 139, 0.2), rgba(26, 80, 139, 0.2));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+}
+
+.article__banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.article__layout {
+    padding: 42px 10px 64px;
+}
+
+.article__title {
+    color: var(--brown);
+    font-size: 42px;
+    font-family: $Montserrat-500;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.article__title--xl {
+    padding-top: 44px;
+    margin-bottom: 18px;
+    font-size: 32px;
+}
+
+.article__title--sm {
+    padding-top: 46px;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.article__section .article__text {
+    margin-bottom: 27px;
+    color: var(--black);
+    font-family: $RobotoCondensed-300;
+    font-size: 18px;
+    line-height: 1.48;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* ======= article MEDIA START ======= */
+@include media-breakpoint-down(sm) {
+    .article__breadcrumbs-layout {
+        padding: 31px 0 32px;
+    }
+
+    .article__title {
+        margin-bottom: 5px;
+        line-height: 1.2;
+    }
+
+    .article__banner {
+        min-height: 585px;
+    }
+
+    .article__banner-image {
+        object-position: top left;
+    }
+
+    .article__layout {
+        padding: 32px 0 46px;
+    }
+
+    .article__title--xl {
+        padding-top: 42px;
+        margin-bottom: 12px;
+    }
+
+    .article__title--sm {
+        padding-top: 43px;
+        margin-bottom: 11px;
+    }
+}
+
+/* ======= article MEDIA END ======= */
+/* ======= article END ======= */
