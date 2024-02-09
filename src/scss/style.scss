@@ -163,7 +163,7 @@ body {
   // justify-content: center;
   // height: 100vh;
 
-  min-width: 390px;
+  min-width: 320px;
   font-family: $RobotoCondensed-400;
   font-size: 16px;
   line-height: 1.625;
@@ -212,106 +212,111 @@ body {
   hyphens: auto;
 }
 
-.button-default {
-  padding: 16px 24px;
-  color: var(--white);
-  font-family: $Montserrat-600;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  border-radius: 7px;
-  border: 1px solid var(--blue);
-  background-color: var(--blue);
-  cursor: pointer;
-}
+/* ======= buttons START ======= */
+// .button-default {
+//   padding: 16px 24px;
+//   color: var(--white);
+//   font-family: $Montserrat-600;
+//   font-size: 13px;
+//   font-weight: 600;
+//   line-height: 1;
+//   text-transform: uppercase;
+//   border-radius: 7px;
+//   border: 1px solid var(--blue);
+//   background-color: var(--blue);
+//   cursor: pointer;
+// }
 
-.button-about {
-  padding: 16px 24px;
-  color: var(--lightBrown);
-  font-family: $Montserrat-600;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  border-radius: 7px;
-  border: 1px solid var(--lightBrown);
-  background-color: var(--white);
-  cursor: pointer;
-}
+// .button-about {
+//   padding: 16px 24px;
+//   color: var(--lightBrown);
+//   font-family: $Montserrat-600;
+//   font-size: 13px;
+//   font-weight: 600;
+//   line-height: 1;
+//   text-transform: uppercase;
+//   border-radius: 7px;
+//   border: 1px solid var(--lightBrown);
+//   background-color: var(--white);
+//   cursor: pointer;
+// }
+/* ======= buttons END ======= */
 
-.link-underlined {
-  position: relative;
+/* ======= links START ======= */
+// .link-underlined {
+//   position: relative;
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: currentColor;
-    pointer-events: none;
-    visibility: hidden;
-    opacity: 0;
-    transition: $navButton;
-  }
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     width: 100%;
+//     height: 1px;
+//     background: currentColor;
+//     pointer-events: none;
+//     visibility: hidden;
+//     opacity: 0;
+//     transition: $navButton;
+//   }
 
-  &:hover:before {
-    visibility: visible;
-    opacity: 1;
-  }
-}
+//   &:hover:before {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+// }
+/* ======= links END ======= */
 
-.input-default {
-  border-radius: 5px;
-  border: 1px solid var(--lightBrown);
-  background-color: var(--white);
-}
+/* ======= inputs START ======= */
+// .input-default {
+//   border-radius: 5px;
+//   border: 1px solid var(--lightBrown);
+//   background-color: var(--white);
+// }
+/* ======= inputs END ======= */
 
 /* ======= breadcrumbs START ======= */
-.breadcrumbs__list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 12px;
-}
+// .breadcrumbs__list {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   gap: 12px;
+// }
 
-.breadcrumbs__list-item {
-  position: relative;
-  display: inline-block;
-  line-height: 1;
+// .breadcrumbs__list-item {
+//   position: relative;
+//   display: inline-block;
+//   line-height: 1;
 
-  &:not(:last-child):after {
-    content: "-";
-    position: absolute;
-    top: 1px;
-    right: -8px;
-    width: auto;
-    height: auto;
-    color: var(--grey);
-  }
-}
+//   &:not(:last-child):after {
+//     content: "-";
+//     position: absolute;
+//     top: 1px;
+//     right: -8px;
+//     width: auto;
+//     height: auto;
+//     color: var(--grey);
+//   }
+// }
 
-.breadcrumbs__list-item-link {
-  position: relative;
-  font-family: $RobotoCondensed-300;
-  font-size: 12px;
-  line-height: 1;
-  color: var(--grey);
+// .breadcrumbs__list-item-link {
+//   position: relative;
+//   font-family: $RobotoCondensed-300;
+//   font-size: 12px;
+//   line-height: 1;
+//   color: var(--grey);
 
-  &--underline:before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: currentColor;
-    pointer-events: none;
-  }
-}
-
+//   &--underline:before {
+//     content: '';
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     width: 100%;
+//     height: 1px;
+//     background: currentColor;
+//     pointer-events: none;
+//   }
+// }
 /* ======= breadcrumbs END ======= */
 
 // Для сброса размытия видеофона в режиме параллакса после открытия canvi nav
@@ -325,55 +330,55 @@ body {
 //   }
 // }
 
-@include media-breakpoint-down(sm) {
-  .container {
-    padding-right: calc(var(--bs-gutter-x) * 1);
-    padding-left: calc(var(--bs-gutter-x) * 1);
-    margin-top: var(--bs-gutter-y);
-  }
-}
+// @include media-breakpoint-down(sm) {
+//   .container {
+//     padding-right: calc(var(--bs-gutter-x) * 1);
+//     padding-left: calc(var(--bs-gutter-x) * 1);
+//     margin-top: var(--bs-gutter-y);
+//   }
+// }
 
 /* ======= Общий CSS END ======= */
 
 /* ======= Кастомный CSS START ======= */
 @import "_pages/_header";
 
-@import "_pages/_promo";
-@import "_pages/_love-in-fish";
-@import "_pages/_products";
-@import "_pages/_love-we-do";
-@import "_pages/_please";
-@import "_pages/_club";
-@import "_pages/_video";
-@import "_pages/_news";
+// @import "_pages/_promo";
+// @import "_pages/_love-in-fish";
+// @import "_pages/_products";
+// @import "_pages/_love-we-do";
+// @import "_pages/_please";
+// @import "_pages/_club";
+// @import "_pages/_video";
+// @import "_pages/_news";
 
-@import "_pages/_products-catalog";
-@import "_pages/_love-in-fish-about";
+// @import "_pages/_products-catalog";
+// @import "_pages/_love-in-fish-about";
 
-@import "_pages/_couple";
-@import "_pages/_recipes";
+// @import "_pages/_couple";
+// @import "_pages/_recipes";
 
-@import "_pages/_recipe";
+// @import "_pages/_recipe";
 
-@import "_pages/_love-we-do-production";
-@import "_pages/_about";
-@import "_pages/_team";
+// @import "_pages/_love-we-do-production";
+// @import "_pages/_about";
+// @import "_pages/_team";
 
-@import "_pages/_club-banner";
-@import "_pages/_club-recommendations";
-@import "_pages/_club-slider";
-@import "_pages/_club-links";
+// @import "_pages/_club-banner";
+// @import "_pages/_club-recommendations";
+// @import "_pages/_club-slider";
+// @import "_pages/_club-links";
 
-@import "_pages/_stories-banner";
-@import "_pages/_stories-happiness";
-@import "_pages/_stories-form";
+// @import "_pages/_stories-banner";
+// @import "_pages/_stories-happiness";
+// @import "_pages/_stories-form";
 
-@import "_pages/_article";
+// @import "_pages/_article";
 
-@import "_pages/_footer";
+// @import "_pages/_footer";
 
-@import "_pages/_canvi-navbar";
-@import "_pages/_modals";
+// @import "_pages/_canvi-navbar";
+// @import "_pages/_modals";
 // @import "_parts/_preloader";
 
 // Общие Media

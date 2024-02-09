@@ -1,17 +1,20 @@
 @import "_mixins/font-face"; // !!! Проверить подключение всех форматов в _mixins/font-face.sass
 
-@include font-face("Montserrat-500", "../fonts/Montserrat/static/Montserrat-Medium", 500);
 @include font-face("Montserrat-600", "../fonts/Montserrat/static/Montserrat-SemiBold", 600);
-@include font-face("Montserrat-700", "../fonts/Montserrat/static/Montserrat-Bold", 700);
 
-@include font-face("RobotoCondensed-300", "../fonts/Roboto_Condensed/static/RobotoCondensed-Light", 300);
-@include font-face("RobotoCondensed-Italic-300", "../fonts/Roboto_Condensed/static/RobotoCondensed-LightItalic", 300);
-@include font-face("RobotoCondensed-400", "../fonts/Roboto_Condensed/static/RobotoCondensed-Regular", 400);
-@include font-face("RobotoCondensed-500", "../fonts/Roboto_Condensed/static/RobotoCondensed-Medium", 500);
-@include font-face("RobotoCondensed-Italic-500", "../fonts/Roboto_Condensed/static/RobotoCondensed-MediumItalic", 500);
-@include font-face("RobotoCondensed-700", "../fonts/Roboto_Condensed/static/RobotoCondensed-Bold", 700);
+@include font-face("Gilroy-300", "../fonts/Gilroy/Gilroy-Light", 300);
+@include font-face("Gilroy-400", "../fonts/Gilroy/Gilroy-Regular", 400);
+@include font-face("Gilroy-500", "../fonts/Gilroy/Gilroy-Medium", 500);
+@include font-face("Gilroy-600", "../fonts/Gilroy/Gilroy-SemiBold", 600);
+@include font-face("Gilroy-700", "../fonts/Gilroy/Gilroy-Bold", 700);
 
-@include font-face("SafiarSignature-400", "../fonts/Safiar_Signature/SafiarSignature", 400);
+@include font-face("NunitoSans-300", "../fonts/Nunito_Sans/static/NunitoSans_10pt-Light", 300);
+@include font-face("NunitoSans-400", "../fonts/Nunito_Sans/static/NunitoSans_10pt-Regular", 400);
+@include font-face("NunitoSans-600", "../fonts/Nunito_Sans/static/NunitoSans_10pt-SemiBold", 600);
+@include font-face("NunitoSans-700", "../fonts/Nunito_Sans/static/NunitoSans_10pt-Bold", 700);
+@include font-face("NunitoSans-800", "../fonts/Nunito_Sans/static/NunitoSans_10pt-ExtraBold", 800);
+
+@include font-face("FactorA-400", "../fonts/FactorA/FactorALight-Regular", 400);
 
 // Подсказка:
 // 100 Тонкий (Волосяной) Thin (Hairline)
