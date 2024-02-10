@@ -164,7 +164,7 @@ body {
   // height: 100vh;
 
   min-width: 320px;
-  font-family: $RobotoCondensed-400;
+  font-family: $Gilroy-400;
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0;
@@ -210,6 +210,46 @@ body {
 
 .has-hyphens {
   hyphens: auto;
+}
+
+
+
+
+.f1 {
+  font-family: $Montserrat-600;
+}
+.f2 {
+  font-family: $Gilroy-300;
+}
+.f3 {
+  font-family: $Gilroy-400;
+}
+.f4 {
+  font-family: $Gilroy-500;
+}
+.f5 {
+  font-family: $Gilroy-600;
+}
+.f6 {
+  font-family: $Gilroy-700;
+}
+.f7 {
+  font-family: $NunitoSans-300;
+}
+.f8 {
+  font-family: $NunitoSans-400;
+}
+.f9 {
+  font-family: $NunitoSans-600;
+}
+.f10 {
+  font-family: $NunitoSans-700;
+}
+.f11 {
+  font-family: $NunitoSans-700;
+}
+.f12 {
+  font-family: $FactorA-400;
 }
 
 /* ======= buttons START ======= */

@@ -23,20 +23,22 @@ $temp: linear-gradient(rgba(0, 0, 0, 0.1));
     --temp:                                  #C0C0C0; // Служебный фон
 }
 
-
 // Шрифты
-$Montserrat-500:                        "Montserrat-500", Arial, sans-serif;
-$Montserrat-600:                        "Montserrat-600", Arial, sans-serif;
-$Montserrat-700:                        "Montserrat-700", Arial, sans-serif;
+$Montserrat-600: "Montserrat-600", Arial, sans-serif;
 
-$RobotoCondensed-300:                   "RobotoCondensed-300", Arial, sans-serif;
-$RobotoCondensed-Italic-300:            "RobotoCondensed-Italic-300", Arial, sans-serif;
-$RobotoCondensed-400:                   "RobotoCondensed-400", Arial, sans-serif;
-$RobotoCondensed-500:                   "RobotoCondensed-500", Arial, sans-serif;
-$RobotoCondensed-Italic-500:            "RobotoCondensed-Italic-500", Arial, sans-serif;
-$RobotoCondensed-700:                   "RobotoCondensed-700", Arial, sans-serif;
+$Gilroy-300:     "Gilroy-300", Arial, sans-serif;
+$Gilroy-400:     "Gilroy-400", Arial, sans-serif;
+$Gilroy-500:     "Gilroy-500", Arial, sans-serif;
+$Gilroy-600:     "Gilroy-600", Arial, sans-serif;
+$Gilroy-700:     "Gilroy-700", Arial, sans-serif;
 
-$SafiarSignature-400:                   "SafiarSignature-400", Arial, sans-serif;
+$NunitoSans-300: "NunitoSans-300", Arial, sans-serif;
+$NunitoSans-400: "NunitoSans-400", Arial, sans-serif;
+$NunitoSans-600: "NunitoSans-600", Arial, sans-serif;
+$NunitoSans-700: "NunitoSans-700", Arial, sans-serif;
+$NunitoSans-800: "NunitoSans-800", Arial, sans-serif;
+
+$FactorA-400:    "FactorA-400", Arial, sans-serif;
 
 // Переходы анимации
 $button:                                0.1s ease;
